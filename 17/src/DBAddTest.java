@@ -33,8 +33,7 @@ public class DBAddTest {
         preparedStatement.setString(1,"04");
         preparedStatement.setString(2,"硕士");
         preparedStatement.setString(3,"");
-
-
+        
 
         int affect = preparedStatement.executeUpdate();
         System.out.println("增加 " + affect + " 行");
