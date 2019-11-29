@@ -40,16 +40,13 @@ public class DBAddTest {
         System.out.println("增加 " + affect + " 行");
         //执行SQL查询语句
         ResultSet resultSet = preparedStatement.executeQuery("select * from degree");
+        System.out.println("查找结果:");
         //执行循环
         while (resultSet.next()){
-            System.out.print(resultSet.getInt("id"));
-            System.out.print(",");
-            System.out.print(resultSet.getString("description"));
-            System.out.print(",");
-            System.out.print(resultSet.getString("no"));
-            System.out.print(",");
-            System.out.print(resultSet.getString("remarks"));
-            System.out.println();
+            System.out.println(resultSet.getInt("id") + "," +
+                    resultSet.getString("description") + "," +
+                    resultSet.getString("no") + "," +
+                    resultSet.getString("remarks"));
         }
         preparedStatement.close();
         //关闭connection对象
