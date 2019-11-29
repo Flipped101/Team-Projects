@@ -1,5 +1,7 @@
 import java.sql.*;
+/*
 
+ */
 public class DBAddTest {
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
         //加载驱动程序
@@ -14,7 +16,7 @@ public class DBAddTest {
         //用户名
         String username = "root";
         //密码
-        String password = "19990623";
+        String password = "20000306ss301!";
         //获得连接对象
         Connection connection = DriverManager.getConnection(url,username,password);
 
