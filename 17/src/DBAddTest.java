@@ -1,6 +1,7 @@
 import java.sql.*;
-/*
 
+/**
+ * 用预编译语句完成学位的增加和删除
  */
 public class DBAddTest {
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
